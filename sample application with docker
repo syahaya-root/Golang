@@ -1,6 +1,6 @@
 #Code
 
-Create file a name is "main.go", thats file for code application golang. Example template:
+- Create file a name is "main.go", thats file for code application golang. Example template:
 ====================================================
 package main
 
@@ -26,11 +26,11 @@ func main() {
 }
 ====================================================
 
-If you already have service "Go", you can test with command "go run main.go" and access URL "http://localhost:8081".
+- If you already have service "Go", you can test with command "go run main.go" and access URL "http://localhost:8081".
 
 #Dockerfile
 
-You can create file "Dockerfile" for application Golang will live. Example template:
+- You can create file "Dockerfile" for application Golang will live. Example template:
 ====================================================
 FROM golang:1.12.0-alpine3.9
 RUN mkdir /app
@@ -40,8 +40,8 @@ RUN go build -o main .
 CMD ["/app/main"]
 ====================================================
 
-And build the image with command "docker build -t my-go-app ." After that run the image with command "docker run -p 8080:8081 -it my-go-app".
+- And build the image with command "docker build -t my-go-app ." After that run the image with command "docker run -p 8080:8081 -it my-go-app".
 
-Check the container if run or not with command "docker ps". If container is running you can access URL "http://localhost:8080".
+- Check the container if run or not with command "docker ps". If container is running you can access URL "http://localhost:8080".
 
-If success your browser display is "Hello, "/"".
+- If success your browser display is "Hello, "/"".
