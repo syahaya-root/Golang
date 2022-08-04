@@ -1,6 +1,6 @@
 ## Installation Use Official Archive
 
-- You can visit the official page in Go for the latest version. But we use the version 1.18.1 for this Project.
+- You can visit the official page in Go https://go.dev/dl/ for the latest version. But we use the version 1.18.1 for this Project.
 
 ```
 wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz
