@@ -1,0 +1,33 @@
+## Installation Use Official Archive
+
+- You can visit the official page in Go for the latest version. But we use the version 1.18.1 for this Project.
+
+```
+wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz
+```
+
+- Then, Extraxt file to /usr/local/
+
+```
+sudo tar -zxvf go1.18.1.linux-amd64.tar.gz -C /usr/local/
+```
+
+- For set up the PATH environtment variable to include Go bin /usr/local/go/bin directory, can use command:
+
+System-wide Go installation:
+```
+echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee /etc/profile.d/go.sh
+source /etc/profile.d/go.sh
+```
+
+Spesific User Profile:
+```
+echo "export PATH=/usr/local/go/bin:${PATH}" | sudo tee -a $HOME/.profile
+source $HOME/.profile
+```
+
+- And check version
+
+```
+go version
+```
